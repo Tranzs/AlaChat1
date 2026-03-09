@@ -1,0 +1,125 @@
+.users-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.users-search {
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.users-search__input {
+  width: 100%;
+  height: 40px;
+  padding: 0 var(--space-md);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+}
+
+.users-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.users-section {
+  padding: var(--space-sm) 0;
+}
+
+.users-section__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.users-section__dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--success);
+  border-radius: 50%;
+}
+
+.users-section__dot.offline {
+  background-color: var(--text-secondary);
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  width: 100%;
+  padding: var(--space-md);
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-fast);
+}
+
+.user-item:hover {
+  background-color: var(--bg-secondary);
+}
+
+.user-item__name {
+  flex: 1;
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.user-badge {
+  font-size: var(--font-size-xs);
+  padding: 2px 6px;
+  background: var(--color-primary);
+  color: white;
+  border-radius: var(--radius-sm);
+}
+
+.user-item__arrow {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.users-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xxl);
+  text-align: center;
+}
+
+.users-empty span {
+  font-size: 48px;
+  margin-bottom: var(--space-md);
+}
+
+.users-empty p {
+  color: var(--text-secondary);
+}
+
+.users-loading {
+  padding: var(--space-md);
+}
+
+.skeleton-user {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+}
+
+.skeleton-user .skeleton--name {
+  width: 120px;
+  height: 20px;
+}

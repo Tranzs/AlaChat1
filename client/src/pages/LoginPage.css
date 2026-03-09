@@ -1,0 +1,115 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-secondary);
+  padding: var(--space-md);
+}
+
+.login-container {
+  width: 100%;
+  max-width: 360px;
+  animation: slideUp var(--transition-slow);
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.login-logo__icon {
+  font-size: 64px;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.login-logo__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.login-logo__subtitle {
+  color: var(--text-secondary);
+  font-size: var(--font-size-md);
+}
+
+.login-form {
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.login-form__field {
+  margin-bottom: var(--space-md);
+}
+
+.login-form__label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.login-form__input {
+  width: 100%;
+  height: 48px;
+  font-size: var(--font-size-md);
+}
+
+.login-form__error {
+  color: var(--error);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-md);
+}
+
+.login-form__button {
+  width: 100%;
+  height: 48px;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast);
+}
+
+.login-form__button:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+}
+
+.login-form__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-form__toggle {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  color: var(--color-primary);
+  font-weight: 500;
+  border: none;
+  margin-top: var(--space-sm);
+  cursor: pointer;
+  transition: opacity var(--transition-fast);
+}
+
+.login-form__toggle:hover:not(:disabled) {
+  opacity: 0.8;
+}
+
+.login-form__toggle:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-note {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-lg);
+}
